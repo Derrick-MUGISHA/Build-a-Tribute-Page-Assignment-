@@ -1,120 +1,107 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+/* General resets styles */
+html {
+    font-size: 10px;
 }
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
     line-height: 1.5;
+    text-align: center;
     color: #333;
     margin: 0;
-    padding: 0;
-    text-align:center;
-    text-align: 1.6rem;
 }
-#main {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    /*background-color: #f1f1f1;*/
-}
-/* header styleeing*/
-h1{
+
+h1 {
     font-size: 4rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    margin-bottom: 0;
 }
-h1+span{
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: var(--secondary-color);
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
 }
-#img-div{
-    background: white;
+
+h2 {
+    font-size: 3.25rem;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
+
+#main {
+    margin: 30px 8px;
     padding: 15px;
-    margin: 30px 0;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#image{
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-}
-#img-caption{
-    margin-top: 15px;
-    font-style: italic;
-    color: var(--secondary-color);
-}
-/* Timeline section styles */
-#timeline{
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
+    border-radius: 5px;
+    background: #eee;
 }
 
-#timeline h2{
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+}
+
+/* Image styles */
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+/* Timeline section */
+#tribute-info {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    font-size: 18.72px;
+}
+
+#tribute-info > h3 {
+    margin: 50px 0;
     text-align: center;
-    margin: 40px 0 25px;
 }
 
-#timeline ul{
-    padding-left: 40px;
-    max-width: 500px;
-    margin: 0 auto;
-    padding:  0 0 0 40px;
-    list-style: none;
-    font-size: 16px;
-    line-height: 25.6px;
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
     text-align: left;
-    height: 1161.6px;
-    width: 550px;
-    margin: 0 252px 50px 252px;
-    list-style-type: disc;
-    list-style-position: outside;
-}
-
-#Tribute-info li {
-    margin: 20px 0;
-    color: rgb(88, 87, 87);
-    font-size: 16px;
-    position: relative;
-    padding: 15px 0 15px 40px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-#tribute-info li {
-    font-size: 16px;
     line-height: 25.6px;
-    text-align: left;
-    word-spacing: 0px;
-    height: 25.6px;
-    width: 550px;
-    margin: 16px 0 16px 0;
-    display: list-item;
-    list-style-type: disc;
-    list-style-position: outside;
+    font-size: 16px;
 }
 
-#Tribute-info li strong {
-    color: black;
-    
+li {
+    margin: 16px 0;
 }
+
 /* Blockquote styles */
-blockquote{
+blockquote {
     font-style: italic;
-    max-width: 600px;
-    margin: 40px auto 20px;
-    padding: 20px;
-    color: rgb(88, 87, 87);  
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
 }
-#cite{
-    margin-top: 5px;
-    align-items: left;
+
+cite {
+    display: block;
+    margin-top: 1rem;
 }
+
 
